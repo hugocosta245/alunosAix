@@ -12,15 +12,15 @@
 <div class="card">
     <div class="card-header @role('admin', true) bg-secondary text-white @endrole">
 
-        Welcome {{ Auth::user()->name }}
+        Bem vindo {{ Auth::user()->name }}
 
         @role('admin', true)
             <span class="pull-right badge badge-primary" style="margin-top:4px">
-                Admin Access
+                Admintrador Acesso
             </span>
         @else
             <span class="pull-right badge badge-warning" style="margin-top:4px">
-                User Access
+                Aluno Acesso
             </span>
         @endrole
 
@@ -30,7 +30,7 @@
             {{ trans('auth.loggedIn') }}
         </h2>
         <p>
-            <em>Thank you</em> for checking this project out. <strong>Please remember to star it!</strong>
+            <em>Obrigado </em> para verificar este projeto. <strong>Lembre-se de marcá-lo com uma estrela!</strong>
         </p>
         <p>
             <iframe src="https://ghbtns.com/github-btn.html?user=jeremykenedy&repo=laravel-auth&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px" style="margin: 0px 0 -3px .5em;"></iframe>
@@ -117,6 +117,12 @@
             </p>
 
         @endrole
+        <div class="pull-left"> 
+            <a href="{{ route('users') }}" class="btn btn-success" data-toggle="tooltip" data-placement="left" title="{{ trans('usersmanagement.tooltips.back-users') }}">
+                <i class="fa fa-fw fa-graduation-cap" aria-hidden="true"></i>
+                {!! trans('usersmanagement.buttons.back-to-users') !!}
+            </a>
+        </div>
 
     </div>
 </div>

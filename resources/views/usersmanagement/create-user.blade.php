@@ -106,6 +106,140 @@
                                 </div>
                             </div>
 
+                            <div class="form-group has-feedback row {{ $errors->has('cep') ? ' has-error ' : '' }}">
+                                {!! Form::label('cep', trans('forms.create_user_label_cep'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('cep', NULL, array('id' => 'cep', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_cep'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="cep">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_cep') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('cep'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('cep') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('logradouro') ? ' has-error ' : '' }}">
+                                {!! Form::label('logradouro', trans('forms.create_user_label_logradouro'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::text('logradouro', NULL, array('id' => 'logradouro', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_logradouro'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="logradouro">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_logradouro') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('logradouro'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('logradouro') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            
+                            <div class="form-group has-feedback row {{ $errors->has('numero') ? ' has-error ' : '' }}">
+                                {!! Form::label('numero', trans('forms.create_user_label_numero'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('numero', NULL, array('id' => 'numero', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_numero'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="numero">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_numero') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('numero'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('numero') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            
+                            <div class="form-group has-feedback row {{ $errors->has('complemento') ? ' has-error ' : '' }}">
+                                {!! Form::label('complemento', trans('forms.create_user_label_complemento'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::text('complemento', NULL, array('id' => 'complemento', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_complemento'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="complemento">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_complemento') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('complemento'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('complemento') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('bairro') ? ' has-error ' : '' }}">
+                                {!! Form::label('bairro', trans('forms.create_user_label_bairro'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::text('bairro', NULL, array('id' => 'bairro', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_bairro'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="bairro">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_bairro') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('bairro'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('bairro') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('cidade') ? ' has-error ' : '' }}">
+                                {!! Form::label('cidade', trans('forms.create_user_label_cidade'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::text('cidade', NULL, array('id' => 'cidade', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_cidade'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="cidade">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_cidade') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('cidade'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('cidade') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('estado') ? ' has-error ' : '' }}">
+                                {!! Form::label('estado', trans('forms.create_user_label_estado'), array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::text('estado', NULL, array('id' => 'estado', 'class' => 'form-control', 'placeholder' => trans('forms.create_user_ph_estado'))) !!}
+                                        <div class="input-group-append">
+                                            <label class="input-group-text" for="estado">
+                                                <i class="fa fa-fw {{ trans('forms.create_user_icon_estado') }}" aria-hidden="true"></i>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('estado'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('estado') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div> 
+                            
                             <div class="form-group has-feedback row {{ $errors->has('role') ? ' has-error ' : '' }}">
                                 {!! Form::label('role', trans('forms.create_user_label_role'), array('class' => 'col-md-3 control-label')); !!}
                                 <div class="col-md-9">

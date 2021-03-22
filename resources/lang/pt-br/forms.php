@@ -28,6 +28,34 @@ return [
     'create_user_ph_lastname'    => 'Sobrenome',
     'create_user_icon_lastname'  => 'fa-user',
 
+    'create_user_label_cep' => 'cep',
+    'create_user_ph_cep'    => 'cep',
+    'create_user_icon_cep'  => 'fa-user',
+
+    'create_user_label_numero' => 'numero',
+    'create_user_ph_numero'    => 'numero',
+    'create_user_icon_numero'  => 'fa-user',
+
+    'create_user_label_logradouro' => 'logradouro',
+    'create_user_ph_logradouro'    => 'logradouro',
+    'create_user_icon_logradouro'  => 'fa-user',
+
+    'create_user_label_complemento' => 'complemento',
+    'create_user_ph_complemento'    => 'complemento',
+    'create_user_icon_complemento'  => 'fa-user',
+
+    'create_user_label_bairro' => 'bairro',
+    'create_user_ph_bairro'    => 'bairro',
+    'create_user_icon_bairro'  => 'fa-user',
+
+    'create_user_label_cidade' => 'cidade',
+    'create_user_ph_cidade'    => 'cidade',
+    'create_user_icon_cidade'  => 'fa-user',
+
+    'create_user_label_estado' => 'estado',
+    'create_user_ph_estado'    => 'estado',
+    'create_user_icon_estado'  => 'fa-user',
+
     'create_user_label_password' => 'Senha',
     'create_user_ph_password'    => 'Senha',
     'create_user_icon_password'  => 'fa-lock',

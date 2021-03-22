@@ -3,18 +3,18 @@
 return [
 
     // Titles
-    'showing-all-users'     => 'Mostrar todos os usuários',
-    'users-menu-alt'        => 'Mostrar usuários admistrativos',
-    'create-new-user'       => 'Criar Novo Usuário',
-    'show-deleted-users'    => 'Mostrar Usuarios apagados!',
-    'editing-user'          => 'Editar usuário :name',
-    'showing-user'          => 'Mostrar usuário :name',
+    'showing-all-users'     => 'Mostrar todos os alunos',
+    'users-menu-alt'        => 'Mostrar admistrativos',
+    'create-new-user'       => 'Criar Novo aluno',
+    'show-deleted-users'    => 'Mostrar alunos apagados!',
+    'editing-user'          => 'Editar aluno :name',
+    'showing-user'          => 'Mostrar aluno :name',
     'showing-user-title'    => ':name\'s Informações',
-    'showing-user-deleted'  => 'Usuários Apagados',
-    'no-records'            => 'Não há registros de usuários apagados',
+    'showing-user-deleted'  => ' Apagados',
+    'no-records'            => 'Não há registros de  apagados',
 
     //Users deleted
-    'role'      => 'Nível do Usuário',
+    'role'      => 'Nível do aluno',
     'IpDeleted' => 'Usuário apagado pelo Ip',
     'deleted'   => 'Usuário apagado em',
     'actions'   => 'Ações',
@@ -28,8 +28,8 @@ return [
     // Show User Tab
     'viewProfile'            => 'Ver Perfil',
     'editUser'               => 'Editar Usuário',
-    'deleteUser'             => 'Apagar Usuários',
-    'usersBackBtn'           => 'Voltar para usuários',
+    'deleteUser'             => 'Apagar ',
+    'usersBackBtn'           => 'Voltar para ',
     'usersPanelTitle'        => 'Informações do usuário',
     'labelUserName'          => 'Nome do usuário:',
     'labelEmail'             => 'Email:',
@@ -49,8 +49,8 @@ return [
     'labelIpUpdate'          => 'Ultima atualização IP:',
     'labelDeletedAt'         => 'Deletado em',
     'labelIpDeleted'         => 'Deletado o IP:',
-    'usersDeletedPanelTitle' => 'Informações de usuários apagados',
-    'usersBackDelBtn'        => 'Voltar para usuários apagados',
+    'usersDeletedPanelTitle' => 'Informações de  apagados',
+    'usersBackDelBtn'        => 'Voltar para  apagados',
 
     'successRestore'    => 'Usuário restaurado com sucesso.',
     'successDestroy'    => 'Usuário apgado com sucesso.',
@@ -60,7 +60,7 @@ return [
     'labelUserLevels' => 'Levels',
 
     'users-table' => [
-        'caption'    => '{1} :userscount user total|[2,*] :userscount total de usuários',
+        'caption'    => '{1} :userscount user total|[2,*] :userscount total de alunos',
         'id'         => 'ID',
         'name'       => 'Nome de usúario',
         'fname'      => 'Nome',
@@ -78,8 +78,8 @@ return [
         'delete'        => '<i class="fa fa-trash-o fa-fw" aria-hidden="true"></i>  <span class="hidden-xs hidden-sm">Apagar</span><span class="hidden-xs hidden-sm hidden-md"> Usuário</span>',
         'show'          => '<i class="fa fa-eye fa-fw" aria-hidden="true"></i> <span class="hidden-xs hidden-sm">Mostrar</span><span class="hidden-xs hidden-sm hidden-md"> Usuário</span>',
         'edit'          => '<i class="fa fa-pencil fa-fw" aria-hidden="true"></i> <span class="hidden-xs hidden-sm">Editar</span><span class="hidden-xs hidden-sm hidden-md"> Usuário</span>',
-        'back-to-users' => '<span class="hidden-sm hidden-xs">Voltar para  </span><span class="hidden-xs">Usuários</span>',
-        'back-to-user'  => 'Voltar  <span class="hidden-xs">para usuários</span>',
+        'back-to-users' => '<span class="hidden-sm hidden-xs">Gerenciar </span><span class="hidden-xs">Alunos</span>',
+        'back-to-user'  => 'Mostra  <span class="hidden-xs">aluno</span>',
         'delete-user'   => '<i class="fa fa-trash-o fa-fw" aria-hidden="true"></i>  <span class="hidden-xs">Apagar</span><span class="hidden-xs"> Usuário</span>',
         'edit-user'     => '<i class="fa fa-pencil fa-fw" aria-hidden="true"></i> <span class="hidden-xs">Editar</span><span class="hidden-xs"> Usuário</span>',
     ],
@@ -89,7 +89,7 @@ return [
         'show'          => 'Mostrar',
         'edit'          => 'Editar',
         'create-new'    => 'Criar um novo usuário',
-        'back-users'    => 'Voltar para usuários',
+        'back-users'    => 'Voltar para alunos',
         'email-user'    => 'Email :user',
         'submit-search' => 'Buscar usuarios para pesquisa',
         'clear-search'  => 'Limpar resultados da pesquisa',
@@ -129,7 +129,7 @@ return [
         'title'             => 'Mostrar resultados da pesquisa',
         'found-footer'      => ' Registro (s) encontrado (s)',
         'no-results'        => 'Não há resultados',
-        'search-users-ph'   => 'Buscar Usuários',
+        'search-users-ph'   => 'Buscar ',
     ],
 
     'modals' => [

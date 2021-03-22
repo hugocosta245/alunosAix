@@ -42,6 +42,7 @@ return [
     'name'            => 'Nome do usuário',
     'first_name'      => 'Nome',
     'last_name'       => 'Sobrenome',
+    'cep'             => 'cep',
     'confirmPassword' => 'Confirme sua senha',
     'register'        => 'Registrar',
 

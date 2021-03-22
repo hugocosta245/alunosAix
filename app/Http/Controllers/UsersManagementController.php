@@ -98,7 +98,13 @@ class UsersManagementController extends Controller
         $user = User::create([
             'name'             => strip_tags($request->input('name')),
             'first_name'       => strip_tags($request->input('first_name')),
-            'last_name'        => strip_tags($request->input('last_name')),
+            'cep'        => strip_tags($request->input('cep')),
+            'logradouro'        => strip_tags($request->input('logradouro')),
+            'numero'        => strip_tags($request->input('numero')),
+            'complemento'        => strip_tags($request->input('complemento')),
+            'bairro'        => strip_tags($request->input('bairro')),
+            'cidade'        => strip_tags($request->input('cidade')),
+            'estado'        => strip_tags($request->input('estado')),
             'email'            => $request->input('email'),
             'password'         => Hash::make($request->input('password')),
             'token'            => str_random(64),
@@ -186,6 +192,13 @@ class UsersManagementController extends Controller
         $user->name = strip_tags($request->input('name'));
         $user->first_name = strip_tags($request->input('first_name'));
         $user->last_name = strip_tags($request->input('last_name'));
+        $user->cep = strip_tags($request->input('cep'));
+        $user->logradouro = strip_tags($request->input('logradouro'));
+        $user->numero = strip_tags($request->input('numero')); 
+        $user->complemento = strip_tags($request->input('complemento'));
+        $user->bairro = strip_tags($request->input('bairro'));
+        $user->cidade = strip_tags($request->input('cidade'));
+        $user->estado = strip_tags($request->input('estado'));
 
         if ($emailCheck) {
             $user->email = $request->input('email');
