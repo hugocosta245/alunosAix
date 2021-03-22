@@ -1,2 +1,8 @@
 ### OSX Vendor Configs ###
 .vscode/
+/public/storage
+/storage/*.key
+/storage/debugbar
+/storage/framework
+/storage/logs
+/storage/users
